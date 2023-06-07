@@ -18,7 +18,7 @@ Let us see all commands and step-by-step instructions in details.
 ### Method # 1: Installing Nvidia driver using GUI on Ubuntu Linux
 1. Go to search Bar and type "Software Updater" and Click on it.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/d883cf18-e356-4f27-b196-c84eff800222)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/ccbe360e-adf3-40aa-b02f-674332af4b0a)
 
 2. Click on the `Settings...` Button.
 
