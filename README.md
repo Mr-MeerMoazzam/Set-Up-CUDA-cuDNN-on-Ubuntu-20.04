@@ -8,5 +8,5 @@ For you to install CUDA, compile the CUDA programs, and run the CUDA programs on
 1. An installed NVIDIA GPU on your computer.
 2. Installed NVIDIA GPU drivers on your Ubuntu operating system.
 
-If you do not have Nvida Drivers in your system then follow this [Totorial](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/tree/main/Install%20Nvidia%20Drivers%20on%20Ubunto)) to install NVIDIA GPU Drivers.
+If you do not have Nvida Drivers in your system then follow this [Totorial](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/tree/main/Install%20Nvidia%20Drivers%20on%20Ubunto) to install NVIDIA GPU Drivers.
 
