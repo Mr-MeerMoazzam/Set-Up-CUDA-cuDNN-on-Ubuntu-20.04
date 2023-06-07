@@ -26,7 +26,7 @@ If you do not have Nvida Drivers in your system then follow this [Totorial](http
 ```sudo apt update```
 
 ## Install CUDA on Ubuntu
-1. Check which version of CUDA is compatible with NVIDIA Driver Version you installed in your system from the [Official] (https://docs.nvidia.com/deploy/cuda-compatibility/index.html#minor-version-compatibility).
+1. Check which version of CUDA is compatible with NVIDIA Driver Version you installed in your system from the [NVIDIA Official](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#minor-version-compatibility) or you can see the compatible version of cuda with your installed Driver version by running ```nvidia-smi``` on your terminal.
 2. Go to the [NVIDIA Official](https://developer.nvidia.com/cuda-toolkit-archive) to download the required version of CUDA according to your hardware specification.
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/eb83d9f2-9fdf-47d7-9b38-4eb28863f377)
