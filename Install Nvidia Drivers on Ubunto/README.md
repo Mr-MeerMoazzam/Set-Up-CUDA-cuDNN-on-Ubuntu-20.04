@@ -22,19 +22,17 @@ Let us see all commands and step-by-step instructions in details.
 
 2. Click on the `Settings...` Button.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/34fc4a33-863b-4f1f-8e4e-3eeffcac3cfd)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/1060987c-6c50-447f-abe5-0c4c0f1e671d)
 
 3. Press on `Additional Drivers` Button.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/4b0dc388-eb06-4734-9193-a6674ffc083f)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/e62c3bd5-9cf5-4a77-ab4b-622bd4161b50)
 
 4. Choose nvidia-driver-470 (proprietary) and click on the Apply Changes button. You must authenticate yourself to install Nvidia driver on Ubuntu Linux.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/930d6b6d-b12b-4495-b16a-15e4493d5e60)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/f71348b0-1ec9-4444-8d72-cab82746e020)
 
 5. Now wait for some time as Nvidia driver downloaded and installed from the internet
-
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/553bbe3e-ed81-48c2-893d-37517f01f8b8)
 
 6. Click on the Close button when done. You must reboot Ubuntu Linux computer to use the driver by typing the following shutdown command:
 
