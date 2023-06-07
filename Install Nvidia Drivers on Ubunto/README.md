@@ -32,9 +32,11 @@ Before Going to start installing anything, it is recommended to check the compat
 
 4. Choose nvidia-driver-470 (proprietary) and click on the Apply Changes button. You must authenticate yourself to install Nvidia driver on Ubuntu Linux.
 
-![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/f71348b0-1ec9-4444-8d72-cab82746e020)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/2bc93aef-9fc1-49a5-ab86-6ad062dd4a93)
 
 5. Now wait for some time as Nvidia driver downloaded and installed from the internet
+
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/5b011e7f-d4ff-4b01-9599-bb6707f3300d)
 
 6. Click on the Close button when done. You must reboot Ubuntu Linux computer to use the driver by typing the following shutdown command:
 
@@ -43,6 +45,7 @@ Before Going to start installing anything, it is recommended to check the compat
 OR
 
 ```sudo reboot```
+
 ### Method # 2: Installing Nvidia driver using CLI on Ubuntu Linux
 1. Execute the command as you must apply all pending security updates
 ```sudo apt update && sudo apt upgrade -y```
@@ -62,5 +65,7 @@ OR
 ### Verification Steps
 Open the terminal application and type nvidia-smi to see GPU info and process that are using Nvidia GPU:
 ```nvidia-smi```
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/be8c6901-642a-4ece-a8b6-5a0c273830f6)
+
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/f561f6a5-8ab1-48f9-8b4b-113eb8e983ae)
+
 Now You have successfully installed NVIDIA GPU Drivers
