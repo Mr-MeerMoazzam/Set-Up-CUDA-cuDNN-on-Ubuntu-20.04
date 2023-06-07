@@ -43,5 +43,21 @@ Let us see all commands and step-by-step instructions in details.
 OR
 
 ```sudo reboot```
+### Installing Nvidia driver using CLI on Ubuntu Linux
+1. Execute the command as you must apply all pending security updates
+```sudo apt update && sudo apt upgrade -y```
+2. Then check the compatible version for your GPU from [NVIDIA Official](https://www.nvidia.com/Download/index.aspx?lang=en-us)
+3. Then execute "sudo apt install nvidia-driver-xxx", in my case I'm on a 3060, so I should install nvidia-driver-470.
+```sudo apt install nvidia-driver-xxx````
+4. Then reboot or shutdown by typing the following shutdown command:
 
+```sudo shutdown -r now```
+
+OR
+
+```sudo reboot```
 ### Verification Steps
+Open the terminal application and type nvidia-smi to see GPU info and process that are using Nvidia GPU:
+```nvidia-smi```
+![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/be8c6901-642a-4ece-a8b6-5a0c273830f6)
+Now You have successfully installed NVIDIA GPU Drivers
