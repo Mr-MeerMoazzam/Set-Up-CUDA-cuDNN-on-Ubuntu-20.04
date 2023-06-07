@@ -12,7 +12,7 @@ Let us see all commands and step-by-step instructions in details.
 
 ## Detailed Steps
 1. Finding out information about your GPU by executing this command.
-'''sudo lshw -C display'''
+```sudo lshw -C display```
 ### Installing Nvidia driver using GUI on Ubuntu Linux
 1. Go to search Bar and type "Software Updater" and Click on it.
 ![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/d883cf18-e356-4f27-b196-c84eff800222)
@@ -25,7 +25,7 @@ Let us see all commands and step-by-step instructions in details.
 5. Now wait for some time as Nvidia driver downloaded and installed from the internet
 ![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/553bbe3e-ed81-48c2-893d-37517f01f8b8)
 6. Click on the Close button when done. You must reboot Ubuntu Linux computer to use the driver by typing the following shutdown command:
- '''sudo shutdown -r now'''
+ ```sudo shutdown -r now```
  OR
- '''sudo reboot'''
+```sudo reboot```
 ### Verification Steps
