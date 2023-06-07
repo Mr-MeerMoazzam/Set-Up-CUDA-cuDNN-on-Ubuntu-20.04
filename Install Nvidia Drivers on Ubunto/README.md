@@ -11,6 +11,8 @@ The procedure to install proprietary Nvidia GPU Drivers on Ubuntu 16.04 / 17.10 
 Let us see all commands and step-by-step instructions in details.
 
 ## Detailed Steps
+### Note
+Before Going to start installing anything, it is recommended to check the compatibility versions of [Tensorflow](https://www.tensorflow.org/install/source#gpu) and [Onnx](https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html) to find out which versions suits best for your needs. 
 
 ##### Finding out information about your GPU by executing this command.
 ```sudo lshw -C display```
