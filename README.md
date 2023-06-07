@@ -44,6 +44,8 @@ The last line is tricky and confusing for most people. Since it installs the mos
 Execute "sudo apt-get install cuda-X-X" As in my case.
 ```sudo apt-get install cuda-11-4``` 
 
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/b17a72bf-8ebd-4f52-b4da-b564ed12e1b0)
+
 CUDA and the required packages are now being downloaded and being installed. It takes a while to complete.
 
 2. If you do nvidia-smi or nvcc — version now, they would not work because they are yet to be added to bashrc. Update bashrc now.  
