@@ -33,20 +33,13 @@ If you do not have Nvida Drivers in your system then follow this [Totorial](http
 
 As in my case CUDA 11.4 is compatible with my GPU Driver version. I clicked on CUDA Toolkit 11.4.4. and Select my target plateform.
 
-![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/e531c065-9241-4eb6-920a-c6edebfc63cc)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/c722fcc3-8309-4491-bf22-50b43358fc00)
 
-Now Here you will see a set of commands to install the required CUDA version.
 
-![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/bb01b76e-c26a-4f89-86fb-fa9cbf90ec19)
+Now, you will see a set of commands to runfile locally.
 
-The last line is tricky and confusing for most people. Since it installs the most recent Cuda version, and shouldn’t be used if you don’t want the latest version of CUDA. Instead of executing 
-```sudo apt-get install cuda``` 
-Execute "sudo apt-get install cuda-X-X" As in my case.
-```sudo apt-get install cuda-11-4``` 
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/c0a89be1-c811-472c-8b46-16978f75ff9a)
 
-![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/b17a72bf-8ebd-4f52-b4da-b564ed12e1b0)
-
-CUDA and the required packages are now being downloaded and being installed. It takes a while to complete.
 
 2. If you do nvidia-smi or nvcc — version now, they would not work because they are yet to be added to bashrc. Update bashrc now.  
 Add the below lines to your bashrc.
@@ -66,7 +59,11 @@ After this run the following command to activate the environment variable,
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/5ac919f0-70e2-4e32-bc20-155d562f2b79)
 
+4. If you found that after installing the CUDA version, the driver version is changed then uninstall the cuda version and driver, again install the required driver and run the command below to install CUDA 11.4.3:
 
+```
+wget https://developer.download.nvidia.com/compute/cuda/11.4.3/local_installers/cuda_11.4.3_470.82.01_linux.run
+```
 ### Testing the installation of CUDA 
 1. Create a new virtual environment and activate it as well (Recommended):
 ```conda create -n new_env python=3.8```
