@@ -28,9 +28,9 @@ Let us see all commands and step-by-step instructions in details.
 
 ![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/4b0dc388-eb06-4734-9193-a6674ffc083f)
 
-4. Choose nvidia-driver-530 (proprietary, tested) and click on the Apply Changes button. You must authenticate yourself to install Nvidia driver on Ubuntu Linux.
+4. Choose nvidia-driver-470 (proprietary) and click on the Apply Changes button. You must authenticate yourself to install Nvidia driver on Ubuntu Linux.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/629d5753-8e2a-47fd-a95f-c1dfe37bf0d1)
+![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/930d6b6d-b12b-4495-b16a-15e4493d5e60)
 
 5. Now wait for some time as Nvidia driver downloaded and installed from the internet
 
