@@ -63,6 +63,19 @@ After this run the following command to activate the environment variable,
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/5ac919f0-70e2-4e32-bc20-155d562f2b79)
 
 
+### Testing the installation of CUDA 
+1. Create a new virtual environment and activate it as well (Recommended):
+```conda create -n new_env python=3.8```
+```conda activate new_env```
+2. Install the required libraries by running the command
+```conda install pytorch torchvision cudatoolkit=10.1 -c pytorch```
+```conda install tensorflow-gpu```
+3. It will install PyTorch and TensorFlow. To check if they are working: Open python terminal now and import TensorFlow and torch inside it. Now, do:
+``` torch.cuda.is_available()```
+If it returns True, the torch is able to use GPU. Check for TensorFlow now. If the below command shows GPU name then Tensorflow is working with GPU as well.
+```print (tf.test.gpu_device_name())```
+Now, nvidia-smi, nvcc — version both would work, and in fact, torch and Tensorlfow are able to use GPUs as well. 
+
 ## Install CUDNN
 1. To install cuDNN, you need to login to Nvidia website and download the tar.gz version of CUDNN that is compatible with your CUDA version using this [official link](https://developer.nvidia.com/rdp/cudnn-archive).
 
@@ -96,3 +109,15 @@ As in my case
 
 ### Testing the installation of cuDNN
 
+1. Install library ```sudo apt-get install libfreeimage3 libfreeimage-dev```
+2. Copy he cuDNN samples to a writable path.
+```cp -r /usr/src/cudnn_samples_v8/ $HOME```
+3. Go to the writable path.
+```cd  $HOME/cudnn_samples_v8/mnistCUDNN```
+4. Compile the mnistCUDNN sample.
+``` make clean && make```
+5. Run the mnistCUDNN sample.
+```./mnistCUDNN```
+6. If cuDNN is properly installed and running on your Linux system, you will see a message similar to the following:
+```Test passed!```
+Note. If Test Passed is not displayed then maybe a missing package needs to be installed. Please install the packages mentioned in terminal output and perfom step 4 again. You can ignore any warnings appearing after this procedure and this validates the cuDNN installation.
