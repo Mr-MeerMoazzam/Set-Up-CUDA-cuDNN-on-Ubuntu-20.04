@@ -12,7 +12,7 @@ Let us see all commands and step-by-step instructions in details.
 
 ## Detailed Steps
 ### Note
-Before Going to start installing anything, it is recommended to check the compatibility versions of [Tensorflow](https://www.tensorflow.org/install/source#gpu) and [Onnx](https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html) to find out which versions suits best for your needs. 
+Before Going to start installing anything, it is recommended to check the compatibility versions of [Tensorflow](https://www.tensorflow.org/install/source#gpu) and [Onnx](https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html) to find out which versions suits best for your needs. As Nvidia Driver Version 450>= is required to suport cuda version 11.x as you can see at the [official](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#minor-version-compatibility)
 
 ##### Finding out information about your GPU by executing this command.
 ```sudo lshw -C display```
@@ -46,7 +46,8 @@ OR
 ### Method # 2: Installing Nvidia driver using CLI on Ubuntu Linux
 1. Execute the command as you must apply all pending security updates
 ```sudo apt update && sudo apt upgrade -y```
-2. Then check the compatible version for your GPU from [NVIDIA Official] (https://www.nvidia.com/Download/index.aspx?lang=en-us)
+2. Then check the compatible version for your GPU from [NVIDIA Official](https://www.nvidia.com/Download/index.aspx?lang=en-us)
+
 3. Then execute "sudo apt install nvidia-driver-xxx", in my case I'm on a 3060, so I should install nvidia-driver-470.
 
 ```sudo apt install nvidia-driver-xxx````
