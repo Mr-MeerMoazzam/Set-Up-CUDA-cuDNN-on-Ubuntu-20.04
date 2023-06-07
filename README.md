@@ -58,7 +58,10 @@ After which do,
 ```source .bashrc```
 
 3. To check if CUDA is installed successfully on Ubuntu, run the following command:
-```nvcc --version```
+```nvcc --version``` and ```nvidia-smi```
+
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/5ac919f0-70e2-4e32-bc20-155d562f2b79)
+
 
 ## Install CUDNN
 To install cuDNN, you need to login to Nvidia website and download the tar.gz version using this official link.
