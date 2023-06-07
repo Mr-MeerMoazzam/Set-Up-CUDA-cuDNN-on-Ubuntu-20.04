@@ -46,7 +46,18 @@ Execute "sudo apt-get install cuda-X-X" As in my case.
 
 CUDA and the required packages are now being downloaded and being installed. It takes a while to complete.
 
-2. To check if CUDA is installed successfully on Ubuntu, run the following command:
+2. If you do nvidia-smi or nvcc — version now, they would not work because they are yet to be added to bashrc. Update bashrc now.  
+Add the below lines to your bashrc.
+```export PATH="/usr/local/cuda-12.1/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-12.1/lib64:$LD_LIBRARY_PATH"
+```
+Instead of "cuda-12.1", replace with your specific veresion of cuda.
+
+After which do,
+
+```source .bashrc```
+
+3. To check if CUDA is installed successfully on Ubuntu, run the following command:
 ```nvcc --version```
 
 ## Install CUDNN
