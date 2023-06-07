@@ -29,16 +29,15 @@ If you do not have Nvida Drivers in your system then follow this [Totorial](http
 1. Check which version of CUDA is compatible with NVIDIA Driver Version you installed in your system from the [Official] (https://docs.nvidia.com/deploy/cuda-compatibility/index.html#minor-version-compatibility).
 2. Go to the [NVIDIA Official](https://developer.nvidia.com/cuda-toolkit-archive) to download the required version of CUDA according to your hardware specification.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/ce0e301f-7c7d-458e-ae79-270c29942c40)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/eb83d9f2-9fdf-47d7-9b38-4eb28863f377)
 
 As in my case CUDA 12.1 is copatible with my GPU Driver version. I clicked on CUDA Toolkit 12.1.0. and Select my target plateform.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/d4bcaf40-c887-4914-920c-bc1f6fe25a3c)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/cfed0da9-6053-4d84-a60b-31a92406f150)
 
 Now Here you will see a set of commands to install the required CUDA version.
 
-![image](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/assets/98279854/82fe84ab-a286-4a90-bf48-7461d2f3517d)
-
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/247ae292-e98f-48d2-a8f5-efacb3a9b466)
 
 The last line is tricky and confusing for most people. Since it installs the most recent Cuda version, and shouldn’t be used if you don’t want the latest version of CUDA. Instead of executing 
 ```sudo apt-get install cuda``` 
