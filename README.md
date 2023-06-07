@@ -31,29 +31,29 @@ If you do not have Nvida Drivers in your system then follow this [Totorial](http
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/eb83d9f2-9fdf-47d7-9b38-4eb28863f377)
 
-As in my case CUDA 12.1 is copatible with my GPU Driver version. I clicked on CUDA Toolkit 12.1.0. and Select my target plateform.
+As in my case CUDA 11.4 is compatible with my GPU Driver version. I clicked on CUDA Toolkit 11.4.4. and Select my target plateform.
 
-![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/cfed0da9-6053-4d84-a60b-31a92406f150)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/e531c065-9241-4eb6-920a-c6edebfc63cc)
 
 Now Here you will see a set of commands to install the required CUDA version.
 
-![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/247ae292-e98f-48d2-a8f5-efacb3a9b466)
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/bb01b76e-c26a-4f89-86fb-fa9cbf90ec19)
 
 The last line is tricky and confusing for most people. Since it installs the most recent Cuda version, and shouldn’t be used if you don’t want the latest version of CUDA. Instead of executing 
 ```sudo apt-get install cuda``` 
 Execute "sudo apt-get install cuda-X-X" As in my case.
-```sudo apt-get install cuda-12-1``` 
+```sudo apt-get install cuda-11-4``` 
 
 CUDA and the required packages are now being downloaded and being installed. It takes a while to complete.
 
 2. If you do nvidia-smi or nvcc — version now, they would not work because they are yet to be added to bashrc. Update bashrc now.  
 Add the below lines to your bashrc.
 
-```export PATH="/usr/local/cuda-12.1/bin:$PATH"```
+```export PATH="/usr/local/cuda-11.4/bin:$PATH"```
 
-```export LD_LIBRARY_PATH="/usr/local/cuda-12.1/lib64:$LD_LIBRARY_PATH"```
+```export LD_LIBRARY_PATH="/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"```
 
-Instead of "cuda-12.1", replace with your specific veresion of cuda.
+Instead of "cuda-11.4", replace with your specific veresion of cuda.
 
 After this run the following command to activate the environment variable,
 
