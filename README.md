@@ -1,10 +1,10 @@
 # Cuda-CUDNN-Setup-In-Ubunto-20.04
-In this repo, I will show you how to install CUDA, CUDNN on Ubuntu 22.04 LTS. We will also show you how to write, compile, and run your very first CUDA program on Ubuntu 20.04 LTS as well to ensure the succussfully installation.
+In this repo, I will show you how to install CUDA, CUDNN on Ubuntu 20.04 LTS. I will also show you how to write, compile, and run your very first CUDA program on Ubuntu 20.04 LTS as well to ensure the succussfully installation.
 ## Cuda
 The full form of CUDA is Compute Unified Device Architecture. CUDA is a parallel computing platform and programming model developed by NVIDIA. It is used to run the programs on NVIDIA Graphics Processing Units (GPUs) to dramatically speed up the computing applications.
 
 ## Prerequisites
-For you to install CUDA, compile the CUDA programs, and run the CUDA programs on Ubuntu 22.04 LTS operating system, you need the following:
+For you to install CUDA, compile the CUDA programs, and run the CUDA programs on Ubuntu 20.04 LTS operating system, you need the following:
 1. An installed NVIDIA GPU on your computer.
 
 2. Installing GCC and Other Build Tools with the following command 
