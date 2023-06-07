@@ -46,9 +46,11 @@ OR
 ### Method # 2: Installing Nvidia driver using CLI on Ubuntu Linux
 1. Execute the command as you must apply all pending security updates
 ```sudo apt update && sudo apt upgrade -y```
-2. Then check the compatible version for your GPU from [NVIDIA Official](https://www.nvidia.com/Download/index.aspx?lang=en-us)
+2. Then check the compatible version for your GPU from [NVIDIA Official] (https://www.nvidia.com/Download/index.aspx?lang=en-us)
 3. Then execute "sudo apt install nvidia-driver-xxx", in my case I'm on a 3060, so I should install nvidia-driver-470.
+
 ```sudo apt install nvidia-driver-xxx````
+
 4. Then reboot or shutdown by typing the following shutdown command:
 
 ```sudo shutdown -r now```
