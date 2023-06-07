@@ -1,4 +1,4 @@
-# Cuda-Setup-In-Ubunto-22.04
+# Cuda-CUDNN-Setup-In-Ubunto-20.04
 In this repo, we will show you how to install CUDA on Ubuntu 22.04 LTS from the official package repository of Ubuntu. We will also show you how to write, compile, and run your very first CUDA program on Ubuntu 22.04 LTS as well.
 ## Cuda
 The full form of CUDA is Compute Unified Device Architecture. CUDA is a parallel computing platform and programming model developed by NVIDIA. It is used to run the programs on NVIDIA Graphics Processing Units (GPUs) to dramatically speed up the computing applications.
@@ -53,7 +53,7 @@ export LD_LIBRARY_PATH="/usr/local/cuda-12.1/lib64:$LD_LIBRARY_PATH"
 ```
 Instead of "cuda-12.1", replace with your specific veresion of cuda.
 
-After which do,
+After this run the following command to activate the environment variable,
 
 ```source .bashrc```
 
@@ -64,4 +64,35 @@ After which do,
 
 
 ## Install CUDNN
-To install cuDNN, you need to login to Nvidia website and download the tar.gz version using this official link.
+1. To install cuDNN, you need to login to Nvidia website and download the tar.gz version of CUDNN that is compatible with your CUDA version using this [official link](https://developer.nvidia.com/rdp/cudnn-archive).
+
+2. Once downloaded extract the downloaded file and copy the necessary contents to the cuda directory. Navigate the download file directory and run the following commands.
+
+```sudo dpkg -i cudnn-local-repo-ubuntu2004-8.9.1.23_1.0-1_amd64.deb```
+``` sudo cp /var/cudnn-local-repo-ubuntu2004-8.9.1.23/cudnn-local-A9C84908-keyring.gpg /usr/share/keyrings/```
+```sudo apt update```
+
+3. Now Run ```sudo apt list libcudnn8 -a``` command to check available versions of libcudnn8 for CUDA. From CUDA 11.6 and onwwards, the cuDNN version does not need to be.
+
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/21b0db47-b805-47a4-878b-fa00dda4b6bf)
+
+4. In accordance with installed CUDA version. Now replace the x.x.x and X.Y with latest version numbers obtained in upcoming commands. 
+5. Install the runtime library By running the following command.
+``` sudo apt install libcudnn8=8.x.x.x-1+cudaX.Y```
+As in my case
+``` sudo apt install libcudnn8=8.9.2.26-1+cuda12.1```
+6. Install the developer library By running the following command.
+``` sudo apt install libcudnn8-dev=8.x.x.x-1+cudaX.Y```
+As in my case 
+``` sudo apt install libcudnn8-dev=8.9.2.26-1+cuda12.1```
+7. Install code samples and the cuDNN library documentation By running the following command.
+``` sudo apt install libcudnn8-samples=8.x.x.x-1+cudaX.Y```
+As in my case 
+``` sudo apt install libcudnn8-samples=8.9.2.26-1+cuda12.1```
+8. Now reboot your system by running the following command
+```sudo reboot```
+
+
+
+### Testing the installation of cuDNN
+
