@@ -51,10 +51,13 @@ Now, you will see a set of commands to runfile locally.
 4. Add CUDA path to the bashrc file.
 For programs to be able to recognize the location of CUDA, we must add PATH to the bashrc file. Execute the following commands to add CUDA path.
 
-```echo 'export PATH=/usr/local/cuda-11.4/bin:$PATH' >> ~/.bashrc
+```
+echo 'export PATH=/usr/local/cuda-11.4/bin:$PATH' >> ~/.bashrc
 
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+
 source ~/.bashrc
+
 sudo ldconfig
 ```
 
