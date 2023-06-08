@@ -30,7 +30,7 @@ Before Going to start installing anything, it is recommended to check the compat
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/e62c3bd5-9cf5-4a77-ab4b-622bd4161b50)
 
-4. Choose nvidia-driver-470 (proprietary) and click on the Apply Changes button. You must authenticate yourself to install Nvidia driver on Ubuntu Linux.
+4. Choose nvidia-driver-520 (proprietary) and click on the Apply Changes button. You must authenticate yourself to install Nvidia driver on Ubuntu Linux.
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/2bc93aef-9fc1-49a5-ab86-6ad062dd4a93)
 
