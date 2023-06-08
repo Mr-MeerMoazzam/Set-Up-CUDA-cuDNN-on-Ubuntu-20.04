@@ -40,21 +40,28 @@ Now, you will see a set of commands to runfile locally.
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/c0a89be1-c811-472c-8b46-16978f75ff9a)
 
+3. After running the below command, make sure that you uncheck NVIDIA Driver option (as shown below) as we have already installed it in the previous step.
 
-2. If you do nvidia-smi or nvcc — version now, they would not work because they are yet to be added to bashrc. Update bashrc now.  
-Add the below lines to your bashrc.
+```sudo sh cuda_11.4.4_470.82.01_linux.run```
 
-```export PATH="/usr/local/cuda-11.4/bin:$PATH"```
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/24f1edc4-9ee8-4556-bdfb-7045bb74463b)
 
-```export LD_LIBRARY_PATH="/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"```
+
+
+4. Add CUDA path to the bashrc file.
+For programs to be able to recognize the location of CUDA, we must add PATH to the bashrc file. Execute the following commands to add CUDA path.
+
+```echo 'export PATH=/usr/local/cuda-11.4/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+sudo ldconfig```
+
 
 Instead of "cuda-11.4", replace with your specific veresion of cuda.
 
 After this run the following command to activate the environment variable,
 
-```source .bashrc```
-
-3. To check if CUDA is installed successfully on Ubuntu, run the following command:
+5. To check if CUDA is installed successfully on Ubuntu, run the following command:
 ```nvcc --version``` and ```nvidia-smi```
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/5ac919f0-70e2-4e32-bc20-155d562f2b79)
