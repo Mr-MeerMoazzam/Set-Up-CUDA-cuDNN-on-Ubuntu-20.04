@@ -99,7 +99,7 @@ Now, nvidia-smi, nvcc — version both would work, and in fact, torch and Tensor
 
 ```sudo dpkg -i libcudnn8_8.2.4.15-1+cuda11.4_amd64.deb ```
 
-``` sudo dpkg -i libcudnn8-dev_8.2.4.15-1+cuda11.4_amd64.deb ```
+``` sudo cp /var/cudnn-local-repo-cross-sbsa-ubuntu2004-8.6.0.163/cudnn-local-627ADBB2-keyring.gpg /usr/share/keyrings/ ```
 
 ```sudo apt update```
 
