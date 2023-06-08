@@ -92,8 +92,11 @@ Now, nvidia-smi, nvcc — version both would work, and in fact, torch and Tensor
 2. Once downloaded extract the downloaded file and copy the necessary contents to the cuda directory. Navigate the download file directory and run the following commands.
 
 ```sudo dpkg -i cudnn-local-repo-ubuntu2004-8.9.1.23_1.0-1_amd64.deb```
+
 ``` sudo cp /var/cudnn-local-repo-ubuntu2004-8.9.1.23/cudnn-local-A9C84908-keyring.gpg /usr/share/keyrings/```
+
 ```sudo apt update```
+
 
 3. Now Run ```sudo apt list libcudnn8 -a``` command to check available versions of libcudnn8 for CUDA. From CUDA 11.6 and onwwards, the cuDNN version does not need to be.
 
