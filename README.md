@@ -106,15 +106,15 @@ Now, nvidia-smi, nvcc — version both would work, and in fact, torch and Tensor
 5. Install the runtime library By running the following command.
 ``` sudo apt install libcudnn8=8.x.x.x-1+cudaX.Y```
 As in my case
-``` sudo apt install libcudnn8=8.9.2.26-1+cuda12.1```
+``` sudo apt install libcudnn8=8.2.4.15-1+cuda11.4```
 6. Install the developer library By running the following command.
 ``` sudo apt install libcudnn8-dev=8.x.x.x-1+cudaX.Y```
 As in my case 
-``` sudo apt install libcudnn8-dev=8.9.2.26-1+cuda12.1```
+``` sudo apt install libcudnn8-dev=8.2.4.15-1+cuda11.4```
 7. Install code samples and the cuDNN library documentation By running the following command.
 ``` sudo apt install libcudnn8-samples=8.x.x.x-1+cudaX.Y```
 As in my case 
-``` sudo apt install libcudnn8-samples=8.9.2.26-1+cuda12.1```
+``` sudo apt install libcudnn8-samples=8.2.4.15-1+cuda11.4```
 8. Now reboot your system by running the following command
 ```sudo reboot```
 
