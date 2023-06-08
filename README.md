@@ -7,7 +7,11 @@ The full form of CUDA is Compute Unified Device Architecture. CUDA is a parallel
 For you to install CUDA, compile the CUDA programs, and run the CUDA programs on Ubuntu 20.04 LTS operating system, you need the following:
 1. An installed NVIDIA GPU on your computer.
 
-2. Installing GCC and Other Build Tools with the following command 
+2. Installed NVIDIA GPU drivers on your Ubuntu operating system.
+
+If you do not have Nvida Drivers in your system then follow this [Totorial](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/tree/main/Install%20Nvidia%20Drivers%20on%20Ubunto) to install NVIDIA GPU Drivers.
+
+3. Installing GCC and Other Build Tools with the following command 
 ```sudo apt install build-essential```
 GCC and the required packages are now being installed. It takes a while to complete. GCC and the required build tools for CUDA to work should be installed at this point.
 
@@ -15,12 +19,8 @@ To check whether you can access the GCC C and C++ compilers, run the following c
 ```gcc --version```
 ```g++ --version```
 
-3. Install Kernel Headers with the following command:
+4. Install Kernel Headers with the following command:
 ```sudo apt install linux-headers-$(uname -r)```
-
-4. Installed NVIDIA GPU drivers on your Ubuntu operating system.
-
-If you do not have Nvida Drivers in your system then follow this [Totorial](https://github.com/Mr-MeerMoazzam/Cuda-Setup-In-Ubunto-22.04/tree/main/Install%20Nvidia%20Drivers%20on%20Ubunto) to install NVIDIA GPU Drivers.
 
 5. Updating the APT Package Repository Cache with the following command:
 ```sudo apt update```
