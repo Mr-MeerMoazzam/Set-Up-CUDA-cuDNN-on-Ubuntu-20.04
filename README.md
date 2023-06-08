@@ -54,7 +54,8 @@ For programs to be able to recognize the location of CUDA, we must add PATH to t
 ```echo 'export PATH=/usr/local/cuda-11.4/bin:$PATH' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
-sudo ldconfig```
+sudo ldconfig
+```
 
 
 Instead of "cuda-11.4", replace with your specific veresion of cuda.
@@ -62,15 +63,16 @@ Instead of "cuda-11.4", replace with your specific veresion of cuda.
 After this run the following command to activate the environment variable,
 
 5. To check if CUDA is installed successfully on Ubuntu, run the following command:
-```nvcc --version``` and ```nvidia-smi```
-
-![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/5ac919f0-70e2-4e32-bc20-155d562f2b79)
-
-4. If you found that after installing the CUDA version, the driver version is changed then uninstall the cuda version and driver, again install the required driver and run the command below to install CUDA 11.4.3:
-
 ```
-wget https://developer.download.nvidia.com/compute/cuda/11.4.3/local_installers/cuda_11.4.3_470.82.01_linux.run
+nvcc --version
+``` 
+and 
 ```
+nvidia-smi
+```
+
+![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/372378a7-b3a5-4ce4-8a8e-9d6e27117fe8)
+
 ### Testing the installation of CUDA 
 1. Create a new virtual environment and activate it as well (Recommended):
 ```conda create -n new_env python=3.8```
