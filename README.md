@@ -73,6 +73,8 @@ nvidia-smi
 
 ![image](https://github.com/Mr-MeerMoazzam/Set-Up-CUDA-cuDNN-on-Ubuntu-20.04/assets/98279854/372378a7-b3a5-4ce4-8a8e-9d6e27117fe8)
 
+If you have sre facing any error you can refer the [Official Link](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-linux).
+
 ### Testing the installation of CUDA 
 1. Create a new virtual environment and activate it as well (Recommended):
 ```conda create -n new_env python=3.8```
