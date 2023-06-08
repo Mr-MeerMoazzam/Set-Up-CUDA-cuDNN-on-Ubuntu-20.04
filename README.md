@@ -91,9 +91,9 @@ Now, nvidia-smi, nvcc — version both would work, and in fact, torch and Tensor
 
 2. Once downloaded extract the downloaded file and copy the necessary contents to the cuda directory. Navigate the download file directory and run the following commands.
 
-```sudo dpkg -i cudnn-local-repo-ubuntu2004-8.9.1.23_1.0-1_amd64.deb```
+```sudo dpkg -i libcudnn8-dev_8.2.4.15-1+cuda11.4_amd64.deb ```
 
-``` sudo cp /var/cudnn-local-repo-ubuntu2004-8.9.1.23/cudnn-local-A9C84908-keyring.gpg /usr/share/keyrings/```
+``` sudo cp /var/cudnn-local-repo-ubuntu2004-8.2.4.15/cudnn-local-A9C84908-keyring.gpg /usr/share/keyrings/```
 
 ```sudo apt update```
 
